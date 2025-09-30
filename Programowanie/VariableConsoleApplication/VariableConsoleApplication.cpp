@@ -54,14 +54,39 @@ void task2()
 //Program obliczaj¹cy pole prostok¹ta.
 void task3()
 {
+    int sideA, sideB;
+
+    std::cout << "Aby policzyæ pole prostok¹ta podaj pierwszy bok:\n";
+    std::cin >> sideA;
+
+    std::cout << "Podaj drugi bok:\n";
+    std::cin >> sideB;
+
+    int avg;
+
+    avg = sideA * sideB;
+
+    std::cout << "Pole prostok¹ta " << avg << "\n";
 
 }
 
-
-int main()
+//Program obliczaj¹cy objêtoœæ sto¿ka.
+void task4()
 {
-    task3();
+    int coneHeight, coneBaseRadius;
+
+    std::cout << "Aby policzyæ objêtoœæ sto¿ka podaj wysokoœæ : \n";
+    std::cin >> coneHeight;
+
+    std::cout << "Podaj promieñ œrednicy:\n";
+    std::cin >> coneBaseRadius;
+
+    int coneVolume;
+    coneVolume = (3.14 / 3) * (coneBaseRadius * coneBaseRadius) * coneHeight;
+
+    std::cout << "Objêtoœæ sto¿ka wynosi:" << coneVolume << "\n";
 }
+int main()
 
 
 /*

@@ -13,7 +13,7 @@ int main()
 	std::cout << '\n';
 	std::cout << -2.5; //sta³a rzeczywista
 	std::cout << "Pierwsza liczba " << 254 << " kolejny tekst";
-
+}
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
