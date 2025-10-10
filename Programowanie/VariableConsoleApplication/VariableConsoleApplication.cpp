@@ -85,7 +85,43 @@ void task4()
     coneVolume = (3.14 / 3) * (coneBaseRadius * coneBaseRadius) * coneHeight;
 
     std::cout << "Objêtoœæ sto¿ka wynosi:" << coneVolume << "\n";
+
 }
+//Program obliczaj¹cy pole ko³a.
+void task5()
+{
+    int circleRadius;
+
+        std::cout << "Aby policzyæ pole ko³a podaj promieñ:/n";
+    std::cin >> circleRadius;
+
+    int areaOfCircle;
+    areaOfCircle = 3.14 * (circleRadius * circleRadius);
+
+        std::cout << "Pole ko³a wynosi: " << areaOfCircle << "\n";
+
+
+
+}
+
+//Program obliczaj¹cy wartoœæ wyra¿enia a^2 + b^2
+    void task6()
+    {
+        int A, B;
+        std::cout << "Podaj liczbê a:\n";
+        std::cin >> A;
+
+            std::cout << "Podaj liczbê b:\n";
+            std::cin >> B;
+
+            int result;
+
+            result = (A * A) + (B * B);
+
+            std::cout << "Wynik wynosi:" << result << "\n";
+}
+
+
 int main()
 
 
