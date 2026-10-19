@@ -1,210 +1,217 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberSafe – poradnik bezpieczeństwa</title>
+body {
+    margin: 0;
+    background-color: #eef3f7;
+    color: #102a43;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
 
-    <link rel="stylesheet" href="style.css">
-</head>
+header {
+    background-color: #12304a;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    min-height: 150px;
+}
 
-<body>
+header h1 {
+    margin: 0;
+    font-size: 42px;
+    font-weight: bold;
+}
 
-    <header>
-        <h1>CyberSafe</h1>
-        <h2>Bezpieczeństwo w sieci zaczyna się od Ciebie.</h2>
-        <p>Praktyczny poradnik dla osób, które chcą bezpiecznie korzystać z Internetu.</p>
-    </header>
+header .haslo {
+    font-size: 18px;
+    margin: 5px 0;
+}
 
-    <nav>
-        <a href="#bezpieczenstwo">Bezpieczeństwo</a>
-        <a href="#hasla">Hasła</a>
-        <a href="#phishing">Phishing</a>
-        <a href="#kontakt">Kontakt</a>
-    </nav>
+header p {
+    font-size: 14px;
+}
 
-    <main>
+nav {
+    background-color: #087e8b;
+    text-align: center;
+    padding: 16px;
+}
 
-        <!-- WPROWADZENIE -->
-        <section id="bezpieczenstwo">
-            <h2>Dlaczego bezpieczeństwo jest ważne?</h2>
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 25px;
+}
 
-            <p>
-                Internet daje nam ogromne możliwości komunikacji, nauki i pracy.
-                Jednocześnie każdego dnia możemy spotkać się z różnego rodzaju
-                zagrożeniami, takimi jak kradzież danych, oszustwa czy złośliwe
-                oprogramowanie.
-            </p>
+nav a:hover {
+    color: #dffcff;
+    text-decoration: underline;
+}
 
-            <p>
-                <strong>Bezpieczeństwo w sieci zależy również od naszych decyzji.</strong>
-                Warto znać podstawowe zasady ochrony danych i stosować je podczas
-                codziennego korzystania z Internetu.
-            </p>
+main {
+    width: 80%;
+    max-width: 900px;
+    margin: 25px auto;
+}
 
-            <p>
-                <em>Ostrożność w sieci może uchronić Cię przed wieloma problemami.</em>
-            </p>
-        </section>
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 25px;
+    border: 1px solid #d5dde5;
+    border-radius: 9px;
+}
 
+section h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #087e8b;
+    padding-bottom: 8px;
+    font-size: 23px;
+}
 
-        <!-- 5 ZASAD -->
-        <section>
-            <h2>5 zasad bezpiecznego Internetu</h2>
+section h3 {
+    font-size: 18px;
+}
 
-            <ol>
-                <li>
-                    <strong>Stosuj silne i unikalne hasła.</strong>
-                    Nie używaj tego samego hasła w wielu serwisach.
-                </li>
+li {
+    margin-bottom: 8px;
+}
 
-                <li>
-                    <strong>Korzystaj z uwierzytelniania dwuskładnikowego.</strong>
-                    Dodatkowa metoda potwierdzenia zwiększa bezpieczeństwo konta.
-                </li>
+.alert {
+    background-color: #e6f7f8;
+    border-left: 5px solid #087e8b;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
 
-                <li>
-                    <strong>Nie klikaj podejrzanych linków.</strong>
-                    Zawsze sprawdzaj, dokąd prowadzi dany odnośnik.
-                </li>
+.kafelki {
+    display: flex;
+    gap: 15px;
+}
 
-                <li>
-                    <strong>Aktualizuj system i programy.</strong>
-                    Aktualizacje często usuwają wykryte luki bezpieczeństwa.
-                </li>
+.kafelek {
+    width: 33.33%;
+    background-color: #f4f8fa;
+    border: 1px solid #d5dde5;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
 
-                <li>
-                    <strong>Weryfikuj informacje.</strong>
-                    Nie udostępniaj dalej wiadomości, których wiarygodności nie udało
-                    się potwierdzić.
-                </li>
-            </ol>
-        </section>
+.kafelek h3 {
+    color: #087e8b;
+}
 
+.kafelek:hover {
+    background-color: #e2f4f5;
+    transform: translateY(-4px);
+}
 
-        <!-- HASŁA -->
-        <section id="hasla">
-            <h2>Jak stworzyć dobre hasło?</h2>
+section img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #087e8b;
+    border-radius: 8px;
+}
 
-            <p>
-                Dobre hasło powinno być trudne do odgadnięcia i nie powinno zawierać
-                oczywistych informacji dotyczących użytkownika.
-            </p>
+.warning {
+    background-color: #fff4d6;
+    border: 2px solid #e0a800;
+    padding: 18px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
 
-            <ul>
-                <li>minimum 12 znaków,</li>
-                <li>wielkie i małe litery,</li>
-                <li>cyfry,</li>
-                <li>znaki specjalne,</li>
-                <li>brak oczywistych informacji, takich jak imię czy data urodzenia.</li>
-            </ul>
+.przyciski {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
 
-            <p class="alert">
-                <strong>Jedno hasło ≠ wszystkie konta</strong>
-            </p>
-        </section>
+button {
+    background-color: #087e8b;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
 
+button:hover {
+    background-color: #075f69;
+    transform: translateY(-2px);
+}
 
-        <!-- CYBERHIGIENA -->
-        <section>
-            <h2>Cyberhigiena na co dzień</h2>
+form {
+    width: 100%;
+}
 
-            <div class="kafelki">
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
 
-                <div class="kafelek">
-                    <h3>HASŁA</h3>
-                    <p>Twórz silne i unikalne hasła.</p>
-                </div>
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #b8c4ce;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
 
-                <div class="kafelek">
-                    <h3>AKTUALIZACJE</h3>
-                    <p>Regularnie aktualizuj urządzenia.</p>
-                </div>
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
 
-                <div class="kafelek">
-                    <h3>OSTROŻNOŚĆ</h3>
-                    <p>Nie ufaj podejrzanym wiadomościom.</p>
-                </div>
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #087e8b;
+    background-color: #f2fbfc;
+}
 
-            </div>
-        </section>
+form button {
+    margin-top: 20px;
+}
 
+footer {
+    background-color: #12304a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
 
-        <!-- PHISHING -->
-        <section id="phishing">
+@media (max-width: 700px) {
 
-    <h2>Phishing - nie daj się złapać</h2>
+    main {
+        width: 90%;
+    }
 
-    <img src="cyber.jpg"  alt ="jpg" alt="Grafika prezentujaca zagrozenia w sieci i metody wyludzania danych"
-    
-    <p>
-        <strong>Phishing</strong> to metoda oszustwa, w której przestępca
-        próbuje nakłonić użytkownika do podania poufnych informacji,
-        takich jak hasła lub dane logowania.
-    </p>
+    nav a {
+        display: block;
+        margin: 8px;
+    }
 
-    <h3>Na co zwrócić uwagę?</h3>
+    .kafelki {
+        flex-direction: column;
+    }
 
-    <ul>
-        <li>Podejrzany adres nadawcy.</li>
-        <li>Presję czasu.</li>
-        <li>Prośbę o podanie hasła.</li>
-        <li>Podejrzany link.</li>
-        <li nietypową wiadomość lub załącznik.</li>
-    </ul>
+    .kafelek {
+        width: auto;
+    }
 
-</section>
-
-
-        <!-- QUIZ -->
-        <section>
-            <h2>Sprawdź swoją wiedzę</h2>
-
-            <h3>Czy potrafisz rozpoznać zagrożenie?</h3>
-
-            <p>
-                Otrzymujesz wiadomość:
-                <strong>„Twoje konto zostanie zablokowane w ciągu 10 minut.
-                Kliknij tutaj, aby potwierdzić dane”.</strong>
-            </p>
-
-            <div class="przyciski">
-                <button>Klikam w link</button>
-                <button>Sprawdzam nadawcę</button>
-                <button>Podaję swoje hasło</button>
-            </div>
-        </section>
-
-
-        <!-- KONTAKT -->
-        <section id="kontakt">
-            <h2>Masz pytanie?</h2>
-
-            <form>
-
-                <label for="imie">Imię</label>
-                <input type="text" id="imie" name="imie">
-
-                <label for="email">Adres e-mail</label>
-                <input type="email" id="email" name="email">
-
-                <label for="temat">Temat</label>
-                <input type="text" id="temat" name="temat">
-
-                <label for="wiadomosc">Wiadomość</label>
-                <textarea id="wiadomosc" name="wiadomosc"></textarea>
-
-                <button type="submit">Wyślij wiadomość</button>
-
-            </form>
-        </section>
-
-    </main>
-
-
-    <footer>
-        <p>CyberSafe | Autor: Imię Nazwisko | klasa | 2026</p>
-    </footer>
-
-</body>
-</html>
+    .przyciski {
+        flex-direction: column;
+    }
+}
